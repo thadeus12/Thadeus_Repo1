@@ -9,9 +9,6 @@ import org.junit.runner.RunWith;
 
 
 
-/**
- * Created by sewadeus on 25/05/2015.
- */
 
 
 @RunWith(Cucumber.class)

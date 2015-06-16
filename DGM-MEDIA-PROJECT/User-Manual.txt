@@ -1,0 +1,16 @@
+About the project
+This is a Cucumber selenium java  page object modal project developed using maven depedence managment tool.
+
+Running the tests
+Download and extract the zipped file to know location, then import the project into IDE such as intellij idea or eclipse 
+
+Open and click the "Testrunner" class at project location src\\test\\java\\com\\dmgmedia\\cucumber
+This will run /execute the tests  (scripts) in chrome browser .
+To run the tests (scripts) in chrome on windows platform(browser exe file included in the project files under selenium standalone binaries folde). Open "config.properties at " file. Change browser from "chrome" to "Firefox" and "TestRunner" class again.
+target\cucumber
+
+Test run time is about 1.10 minutes
+
+Test Results & Reports
+Each time the tests run it takes screen shots with .jpg and index.html file extension stores them at project location "target/cucumber" folder
+Reports are located under ""target/cucumber folder and .js format  can be viewed by right clicking file report.js opening desired browser.
