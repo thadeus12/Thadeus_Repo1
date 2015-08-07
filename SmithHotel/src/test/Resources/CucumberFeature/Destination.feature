@@ -12,4 +12,4 @@ Feature: Search hotels by destination feature
     And I enter my checkin date "20-07-2015"
     And I enter my checkout date "23-07-2015"
     And I click to "Check availability" button
-    Then I should see result for "bookable london hotelsParis"
+    Then I should see result for "bookable hotels in londo n"

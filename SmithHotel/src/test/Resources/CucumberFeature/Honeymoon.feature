@@ -1,13 +1,10 @@
-Feature: Honey moon page
+Feature: Honey moon page As a user i want to search honeymoon hotels
 
-  As a user i want to search honeymoon hotels
-
-  @Askexperts
   Scenario:
     Given I navigate to "honeymoons page"
     Then I should see honeymoon page
 
-  @create-wedding-list
+
   Scenario:
     Given I click on the  "create a wedding list"
     And I signin with "myemail" and "password"

@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 940800,
+  "duration": 642024,
   "status": "passed"
 });
 formatter.scenario({
@@ -63,54 +63,54 @@ formatter.match({
   "location": "ImageUpload_sd.i_am_on_the_image_upload_page()"
 });
 formatter.result({
-  "duration": 10378280184,
+  "duration": 10724867861,
   "status": "passed"
 });
 formatter.match({
   "location": "ImageUpload_sd.i_click_on_the_start_uploading_button()"
 });
 formatter.result({
-  "duration": 501001524,
+  "duration": 356394861,
   "status": "passed"
 });
 formatter.match({
   "location": "ImageUpload_sd.i_enter_the_location_of_the_file()"
 });
 formatter.result({
-  "duration": 500449018,
+  "duration": 500925404,
   "status": "passed"
 });
 formatter.match({
   "location": "ImageUpload_sd.the_image_upload_overlay_should_be_displayed()"
 });
 formatter.result({
-  "duration": 236343722,
+  "duration": 700426496,
   "status": "passed"
 });
 formatter.match({
   "location": "ImageUpload_sd.i_click_on_upload_button()"
 });
 formatter.result({
-  "duration": 982076909,
+  "duration": 797665681,
   "status": "passed"
 });
 formatter.match({
   "location": "ImageUpload_sd.the_image_upload_progress_should_be_started()"
 });
 formatter.result({
-  "duration": 67727318,
+  "duration": 57156623,
   "status": "passed"
 });
 formatter.match({
   "location": "ImageUpload_sd.i_should_see_upload_completion_success_page()"
 });
 formatter.result({
-  "duration": 28552957618,
+  "duration": 28498579109,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 612931606,
+  "duration": 667151320,
   "status": "passed"
 });
 formatter.uri("Login.feature");
@@ -128,7 +128,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 245749,
+  "duration": 131141,
   "status": "passed"
 });
 formatter.background({
@@ -167,35 +167,35 @@ formatter.match({
   "location": "LoginTest_sd.i_am_on_the_Media_Plus_page()"
 });
 formatter.result({
-  "duration": 6065879360,
+  "duration": 5832326395,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest_sd.i_click_on_the_Account_tab()"
 });
 formatter.result({
-  "duration": 233478558,
+  "duration": 334582600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest_sd.i_enter_my_username()"
 });
 formatter.result({
-  "duration": 445882632,
+  "duration": 313915829,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest_sd.i_enter_my_password()"
 });
 formatter.result({
-  "duration": 288104243,
+  "duration": 231259586,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest_sd.i_click_on_the_login_button()"
 });
 formatter.result({
-  "duration": 165918303,
+  "duration": 149197471,
   "status": "passed"
 });
 formatter.scenario({
@@ -215,16 +215,16 @@ formatter.match({
   "location": "LoginTest_sd.i_should_be_logged_in_to_my_account()"
 });
 formatter.result({
-  "duration": 2921810418,
+  "duration": 2856489511,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded1.png");
 formatter.after({
-  "duration": 266250320,
+  "duration": 223937896,
   "status": "passed"
 });
 formatter.before({
-  "duration": 230354,
+  "duration": 147107,
   "status": "passed"
 });
 formatter.background({
@@ -263,35 +263,35 @@ formatter.match({
   "location": "LoginTest_sd.i_am_on_the_Media_Plus_page()"
 });
 formatter.result({
-  "duration": 1544103267,
+  "duration": 1410173164,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest_sd.i_click_on_the_Account_tab()"
 });
 formatter.result({
-  "duration": 275554545,
+  "duration": 143678692,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest_sd.i_enter_my_username()"
 });
 formatter.result({
-  "duration": 344189592,
+  "duration": 310942908,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest_sd.i_enter_my_password()"
 });
 formatter.result({
-  "duration": 301829086,
+  "duration": 208846924,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest_sd.i_click_on_the_login_button()"
 });
 formatter.result({
-  "duration": 164753992,
+  "duration": 149776774,
   "status": "passed"
 });
 formatter.scenario({
@@ -349,16 +349,16 @@ formatter.match({
   "location": "LoginTest_sd.the_tabs_listed_below_should_be_displayed(DataTable)"
 });
 formatter.result({
-  "duration": 2401963249,
+  "duration": 1662032238,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded2.png");
 formatter.after({
-  "duration": 229065353,
+  "duration": 197385152,
   "status": "passed"
 });
 formatter.before({
-  "duration": 146537,
+  "duration": 126580,
   "status": "passed"
 });
 formatter.background({
@@ -397,35 +397,35 @@ formatter.match({
   "location": "LoginTest_sd.i_am_on_the_Media_Plus_page()"
 });
 formatter.result({
-  "duration": 886148975,
+  "duration": 593273009,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest_sd.i_click_on_the_Account_tab()"
 });
 formatter.result({
-  "duration": 181174654,
+  "duration": 231010417,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest_sd.i_enter_my_username()"
 });
 formatter.result({
-  "duration": 287252391,
+  "duration": 245736474,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest_sd.i_enter_my_password()"
 });
 formatter.result({
-  "duration": 262798441,
+  "duration": 177854753,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest_sd.i_click_on_the_login_button()"
 });
 formatter.result({
-  "duration": 140287497,
+  "duration": 128977153,
   "status": "passed"
 });
 formatter.scenario({
@@ -450,67 +450,19 @@ formatter.match({
   "location": "LoginTest_sd.i_click_on_the_signout_link()"
 });
 formatter.result({
-  "duration": 3136426797,
+  "duration": 1582580980,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest_sd.i_should_be_logged_out_of_my_account()"
 });
 formatter.result({
-  "duration": 109258781,
+  "duration": 117787927,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded3.png");
 formatter.after({
-  "duration": 192825747,
-  "status": "passed"
-});
-});                                                                                                                                                                                                                                                                                                                                                                                                              formatter.result({
-  "duration": 4431770637,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginTest_sd.i_click_on_the_login_button()"
-});
-formatter.result({
-  "duration": 1310435408,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 33,
-  "name": "Validate User Account Signout",
-  "description": "",
-  "id": "testing-the-login-to-dailymailplus-application;validate-user-account-signout",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 35,
-  "name": "I click on the signout link",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 36,
-  "name": "I should be logged out of my account",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginTest_sd.i_click_on_the_signout_link()"
-});
-formatter.result({
-  "duration": 2650704431,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginTest_sd.i_should_be_logged_out_of_my_account()"
-});
-formatter.result({
-  "duration": 1936068381,
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded3.png");
-formatter.after({
-  "duration": 447267604,
+  "duration": 173130805,
   "status": "passed"
 });
 });

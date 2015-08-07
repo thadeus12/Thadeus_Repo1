@@ -17,29 +17,26 @@ public class Driver {
 
     public static void initialiseDriver(String Browser) {
 
-            switch (Browser.toUpperCase()) {
+        String s = Browser.toUpperCase();
+        if (s.equals("FIREFOX")) {
+            driver = new FirefoxDriver();
 
-                case "FIREFOX":
-                    driver = new FirefoxDriver();
-                    break;
+        } else if (s.equals("CHROME")) {
+            String chromePath = "selenium_standalone_binaries/chrome/chromedriver.exe";
+            System.setProperty("webdriver.chrome.driver", chromePath);
+            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+            capabilities.setCapability("chrome.switches",
+                    Arrays.asList("--no-default-browser-check"));
+            HashMap<String, String> chromePreferences = new HashMap<String, String>();
+            chromePreferences.put("profile.password_manager_enabled", "false");
+            capabilities.setCapability("chrome.prefs", chromePreferences);
+            driver = new ChromeDriver(capabilities);
 
-                case "CHROME":
-                    String chromePath = "selenium_standalone_binaries/chrome/chromedriver.exe";
-                    System.setProperty("webdriver.chrome.driver", chromePath);
-                    DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-                    capabilities.setCapability("chrome.switches",
-                            Arrays.asList("--no-default-browser-check"));
-                    HashMap<String, String> chromePreferences = new HashMap<String, String>();
-                    chromePreferences.put("profile.password_manager_enabled", "false");
-                    capabilities.setCapability("chrome.prefs", chromePreferences);
-                    driver = new ChromeDriver(capabilities);
 
-                    break;
+        } else {
+            driver = new FirefoxDriver();
 
-                default:
-                    driver = new FirefoxDriver();
-                    break;
-            }
+        }
 
 
         }
