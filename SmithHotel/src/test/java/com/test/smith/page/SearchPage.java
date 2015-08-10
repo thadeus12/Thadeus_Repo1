@@ -45,10 +45,11 @@ public class SearchPage {
             List <WebElement> pages;
     @FindBy(xpath="//*[@id='hotel_1723']/div/div[3]/a[1]")
      private WebElement BooknowButton;
+    String BooknowButton1=".continueToStepOne.btn.btn-small.btn-primary:eq('%s')";
 
     String hotelResult = ".mod-hotelResult-detail>address>a:contains('%s')";
 
-    WebDriverWait wait = new WebDriverWait(Driver.driver(),60);
+    WebDriverWait wait = new WebDriverWait(Driver.driver,60);
 
    public void enterHotelDestination(String destination){
 
@@ -67,18 +68,18 @@ public class SearchPage {
     }
 
     public void clickOnSearchButton(String search){
-        WebElement checksearchButton = Driver.driver().findElement(By.xpath(String.format(searchButton, search)));
+        WebElement checksearchButton = Driver.driver.findElement(By.xpath(String.format(searchButton, search)));
         wait.until(ExpectedConditions.visibilityOf(checksearchButton));
 
-       Driver.driver().findElement(By.xpath(String.format(searchButton, search))).click();
+       Driver.driver.findElement(By.xpath(String.format(searchButton, search))).click();
     }
 
     public void validateHotelDestination(String destination, String country){
 
         if(Integer.parseInt(hotelCount.getText()) != 0) {
 
-            List<WebElement> hotelR_dest = Driver.driver().findElements(By.cssSelector(String.format(hotelResult, destination)));
-            List<WebElement> hotelR_country = Driver.driver().findElements(By.cssSelector(String.format(hotelResult, country)));
+            List<WebElement> hotelR_dest = Driver.driver.findElements(By.cssSelector(String.format(hotelResult, destination)));
+            List<WebElement> hotelR_country = Driver.driver.findElements(By.cssSelector(String.format(hotelResult, country)));
 
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mod-hotelResult-detail>address>a")));
 
@@ -146,6 +147,11 @@ public class SearchPage {
     public void clickOnBookNowButton(String Booknow){
         wait.until(ExpectedConditions.visibilityOf(BooknowButton)).click();
     }
+    public void clickOnBookNowButton2(String Booknow){
+        int booknow=Integer.parseInt(Booknow);
+        WebElement Booknowbutton = Driver.driver.findElement(By.cssSelector(String.format(BooknowButton1,booknow)));
 
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".continueToStepOne.btn.btn-small.btn-primary")));
+    }
 }
 

@@ -13,7 +13,7 @@ import static com.test.smith.utility.Driver.driver;
  */
 public class HotelPage_sd {
     LandingPage homepage = new LandingPage();
-    HotelPage hotelPage = PageFactory.initElements(driver(),HotelPage.class);
+    HotelPage hotelPage = PageFactory.initElements(driver,HotelPage.class);
 
     @Given("^I am on the \"(.*?)\"$")
     public void i_am_on_the(String arg1) throws Throwable {

@@ -14,36 +14,36 @@ import com.test.smith.utility.Driver;
 
 
 
-public class InspirationPage{
+public class InspirationPage extends Driver{
 
 
     String availabilityButton= ".btn-primary:contains('%s')";
     String link_page= ".mod-imgList>li>a>div>h3:contains('%s')";
 
-    WebDriverWait wait=new WebDriverWait(Driver.driver(), 20);
+    WebDriverWait wait=new WebDriverWait(driver, 20);
 
      public void clickonLink(String link){
 
          wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(String.format(link_page, link))));
-         Driver.driver().findElement(By.cssSelector(String.format(link_page, link))).click();
+         driver.findElement(By.cssSelector(String.format(link_page, link))).click();
      }
 
     public void  selectCountryDropdow(String country){
-        WebElement country_name= Driver.driver().findElement(By.cssSelector("#countryDropDown"));
+        WebElement country_name=driver.findElement(By.cssSelector("#countryDropDown"));
         Select country_select=new Select(country_name);
         country_select.selectByVisibleText(country);
     }
 
     public void  selectDestinationDropdow(String destination){
-        WebElement country_name= Driver.driver().findElement(By.cssSelector("#destinationDropDown"));
+        WebElement country_name= Driver.driver.findElement(By.cssSelector("#destinationDropDown"));
         Select country_select=new Select(country_name);
         country_select.selectByVisibleText(destination);
     }
 
     public void checkAvailability(String availibilty){
-        WebElement checkAvailabilty= Driver.driver().findElement(By.cssSelector(String.format(availabilityButton, availibilty)));
+        WebElement checkAvailabilty= Driver.driver.findElement(By.cssSelector(String.format(availabilityButton, availibilty)));
         wait.until(ExpectedConditions.visibilityOf(checkAvailabilty));
-        Driver.driver().findElement(By.cssSelector(String.format(availabilityButton,availibilty))).submit();
+        Driver.driver.findElement(By.cssSelector(String.format(availabilityButton,availibilty))).submit();
 
     }
 

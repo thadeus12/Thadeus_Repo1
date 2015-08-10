@@ -11,7 +11,7 @@ import com.test.smith.utility.Driver;
 /**
  * Created by sewadeus on 10/06/2015.
  */
-public class Hooks {
+public class Hooks extends Driver {
 
 
 
@@ -23,7 +23,7 @@ public class Hooks {
 
     public void embedScreenshot(Scenario scenario) {
         try {
-            byte[] screenshot = ((TakesScreenshot) Driver.driver()).getScreenshotAs(OutputType.BYTES);
+            byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png");
         } catch (WebDriverException somePlatformsDontSupportScreenshots) {
             System.err.println(somePlatformsDontSupportScreenshots.getMessage());

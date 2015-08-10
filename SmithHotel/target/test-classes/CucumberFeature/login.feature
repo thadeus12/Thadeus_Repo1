@@ -1,9 +1,13 @@
 Feature: logind function to smith hotels
 
-  Scenario:
-    Given I am on the smith hotel site "https://www.mrandmrssmith.com"
-    And I click on  "signin" link
-    And I enter my "email" address
-    And I enter my "Password"
-    And I click on the "login" button
-    And I should be logged
+  Scenario: Login to Myaccount
+
+    Given I am on the mrandmrssmith website
+    When I click on the sign in icon
+    And I enter my email address
+    And I enter my password
+    And I click on the login button
+    Then I should be logged in to my accountould be logged
+
+
+

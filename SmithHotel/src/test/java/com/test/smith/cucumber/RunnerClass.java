@@ -1,5 +1,6 @@
 package com.test.smith.cucumber;
 
+import com.test.smith.helper.TextContent;
 import com.test.smith.utility.Driver;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -7,8 +8,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
-
-
+import java.io.IOException;
 
 
 @RunWith(Cucumber.class)
@@ -27,10 +27,11 @@ public class RunnerClass{
 
 
     @BeforeClass
-    public static void setUp(){
+    public static void setUp() throws IOException {
         System.out.println("Starting testing");
-        Driver.driver();
-        Driver.driver().manage().window().maximize();
+        Driver.driver(TextContent.getBrowserName());
+        Driver.driver.manage().window().maximize();
+
     }
 
 
@@ -40,7 +41,7 @@ public class RunnerClass{
     @AfterClass
     public static void tearDown(){
     System.out.println("Quiting browser");
-    Driver.driver().quit();
+    Driver.driver.quit();
 }
 
 

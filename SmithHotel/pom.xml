@@ -2,143 +2,132 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-<modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-<groupId>com.test.smith</groupId>
-<artifactId>com.test.smith</artifactId>
-<version>1.0-SNAPSHOT</version>
-    
-<properties>
+    <groupId>com.test.smith</groupId>
+    <artifactId>com.test.smith</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
 
 
-<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        
-<formatter>html:target/cucumber</formatter>
-        
-<cucumber.options>--format ${formatter} --tags @smoke-test12</cucumber.options>
-  
-</properties>
-   
-<dependencies>
-  
-<dependency>
-           
-<groupId>org.seleniumhq.selenium</groupId>
- 
-<artifactId>selenium-firefox-driver</artifactId>
-            
-<version>2.45.0</version>
-        
-</dependency>
-        
-<dependency>
-            
-<groupId>info.cukes</groupId>
-            
-<artifactId>cucumber-core</artifactId>
-            
-<version>1.2.2</version>
-            
-<scope>test</scope>
-        
-</dependency>
-        
-<dependency>
-            
-<groupId>junit</groupId>
-            
-<artifactId>junit</artifactId>
-            
-<version>4.12</version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <formatter>html:target/cucumber</formatter>
+
+        <cucumber.options>--format ${formatter} --tags @smoke-test12</cucumber.options>
+
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+
+            <groupId>org.seleniumhq.selenium</groupId>
+
+            <artifactId>selenium-server</artifactId>
+
+            <version>2.45.0</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>info.cukes</groupId>
+
+            <artifactId>cucumber-core</artifactId>
+
+            <version>1.2.2</version>
+
             <scope>test</scope>
-       
- </dependency>
-        
-<dependency>
-            
-<groupId>org.springframework</groupId>
-            
-<artifactId>spring-context</artifactId>
-         
- <version>3.2.5.RELEASE</version>
-       
- </dependency>
-       
- <dependency>
-            
-<groupId>info.cukes</groupId>
-           
-<artifactId>cucumber-junit</artifactId>
-            
-<version>1.2.2</version>
-           
- <scope>test</scope>
-        
-</dependency>
-        
-<dependency>
-            
-<groupId>info.cukes</groupId>
-            
-<artifactId>cucumber-java</artifactId>
-            
-<version>1.2.2</version>
-            
-<scope>test</scope>
-       
-</dependency>
-        
-<dependency>
-            
-<groupId>info.cukes</groupId>
-            
-<artifactId>cucumber-core</artifactId>
-           
-<version>1.2.2</version>
-            
-<scope>test</scope>
-        
-</dependency>
-        
-<dependency>
-           
- <groupId>org.seleniumhq.selenium</groupId>
-           
- <artifactId>selenium-support</artifactId>
-            
-<version>2.45.0</version>
-            
-<scope>test</scope>
-        
-</dependency>
-    
-</dependencies>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>junit</groupId>
+
+            <artifactId>junit</artifactId>
+
+            <version>4.12</version>
+            <scope>test</scope>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.springframework</groupId>
+
+            <artifactId>spring-context</artifactId>
+
+            <version>3.2.5.RELEASE</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>info.cukes</groupId>
+
+            <artifactId>cucumber-junit</artifactId>
+
+            <version>1.2.2</version>
+
+            <scope>test</scope>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>info.cukes</groupId>
+
+            <artifactId>cucumber-java</artifactId>
+
+            <version>1.2.2</version>
+
+            <scope>test</scope>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>info.cukes</groupId>
+
+            <artifactId>cucumber-core</artifactId>
+
+            <version>1.2.2</version>
+
+            <scope>test</scope>
+
+        </dependency>
+
+
+    </dependencies>
 
     <build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
 
-            <version>2.3.1</version>
-            <configuration>
-                <source>1.8</source>
-                <target>1.8</target>
-                <optimize>true</optimize>
-            </configuration>
-        </plugin>
+                <version>2.3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <optimize>true</optimize>
+                </configuration>
+            </plugin>
 
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>2.7.2</version>
-            <configuration>
-                <systemPropertyVariables>
-                    <tapestry.execution-mode>Qa</tapestry.execution-mode>
-                </systemPropertyVariables>
-            </configuration>
-        </plugin>
-    </plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.7.2</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <tapestry.execution-mode>Qa</tapestry.execution-mode>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 

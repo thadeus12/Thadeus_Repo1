@@ -15,8 +15,8 @@ import static com.test.smith.utility.Driver.driver;
  */
 public class HotelSearch_sd {
 
-    LandingPage landingPage = PageFactory.initElements(driver(), LandingPage.class);
-    SearchPage searchPage = PageFactory.initElements(driver(), SearchPage.class);
+    LandingPage landingPage = PageFactory.initElements(driver, LandingPage.class);
+    SearchPage searchPage = PageFactory.initElements(driver, SearchPage.class);
     @Given("^I am on the smith hotel site \"(.*?)\"$")
     public void i_am_on_the_smith_hotel_site(String url) throws Throwable {
         landingPage.navigateToHomePage(url);
@@ -62,6 +62,6 @@ searchPage.clickOnBookNowButton(Booknow);
 
     @Then("^I should see hotelpage$")
     public void i_should_see_hotelpage() throws Throwable {
-        Driver.driver().getTitle();
+        Driver.driver.getTitle();
     }
 }

@@ -17,8 +17,8 @@ import static com.test.smith.utility.Driver.driver;
 public class Inspiration_sd{
 
     LandingPage homepage = new LandingPage();
-    InspirationPage inspirationPage=PageFactory.initElements(driver(), InspirationPage.class);
-    SearchPage searchPage = PageFactory.initElements(driver(), SearchPage.class);
+    InspirationPage inspirationPage=PageFactory.initElements(driver, InspirationPage.class);
+    SearchPage searchPage = PageFactory.initElements(driver, SearchPage.class);
 
     @Given("^I go \"(.*?)\"$")
     public void i_go(String smithCollections) throws Throwable {
