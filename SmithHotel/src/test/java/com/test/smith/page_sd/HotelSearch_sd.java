@@ -23,6 +23,11 @@ public class HotelSearch_sd {
 
     }
 
+    @Given("^I click on opt out link$")
+    public void i_click_on_opt_out_link() throws Throwable {
+       searchPage.clickingToOptoutOFBeta();
+    }
+
 
     @When("^I enter my destination \"(.*?)\"$")
     public void i_enter_my_destination(String destination) {
@@ -44,24 +49,117 @@ public class HotelSearch_sd {
 
     @When("^I click on the \"(.*?)\" button$")
     public void i_click_on_the_button(String search)  {
-        System.out.println("clinking on the"+ search);
+        System.out.println("clinking on the" + search);
         searchPage.clickOnSearchButton(search);
     }
 
     @Then("^I should see result for \"(.*?)\" and \"(.*?)\"$")
     public void i_should_see_result_for_and(String country, String destination) {
-        System.out.print("I should see results for"+ country +"and "+ destination);
-        searchPage.validateHotelDestination(destination,country);
+        System.out.print("I should see results for" + country + "and " + destination);
+        searchPage.validateHotelDestination(destination, country);
     }
 
-    @Given("^I click on \"(.*?)\" button$")
-    public void i_click_on_button(String Booknow) throws Throwable {
-        System.out.println("Clicking on"+ Booknow);
-searchPage.clickOnBookNowButton(Booknow);
+
+    @Then("^I should see hotels Rates from price$")
+    public void i_should_see_hotels_Rates_from_price() throws Throwable {
+        searchPage.validateHotelAveragePrice();
+
     }
 
-    @Then("^I should see hotelpage$")
-    public void i_should_see_hotelpage() throws Throwable {
-        Driver.driver.getTitle();
+    @Then("^I click on the book now button$")
+    public void i_click_on_the_book_now_button() throws Throwable {
+        searchPage.clickOnBookNowButton();
     }
+
+
+    @Then("^I should be on get a room tab$")
+    public void i_should_be_on_get_a_room_tab() throws Throwable {
+        searchPage.validateLandedOnGetARoomPage();
+    }
+
+    @Then("^I should see rate per night and total cost of stay$")
+    public void i_should_see_rate_per_night_and_total_cost_of_stay() throws Throwable {
+        searchPage.validateRoomratePerNightAndTotalCostForStay();
+
+    }
+
+    @Then("^I click on book it button$")
+    public void i_click_on_book_it_button() throws Throwable {
+        searchPage.clickOnBookITButton();
+    }
+    @Then("^I should see who is sleeping in the room Popup$")
+    public void i_should_see_who_is_sleeping_in_the_room_Popup() throws Throwable {
+        searchPage.validateRoomGuestPopUp();
+    }
+
+    @Then("^I enter \"(.*?)\" as number of \"adults staying in the room$")
+    public void i_enter_as_number_of_adults_staying_in_the_room(String arg1) throws Throwable {
+        searchPage.enterAdultStayingInThisRoom(arg1);
+
+    }
+
+
+
+    @Then("^I enter \"(.*?)\" as number of children staying in the room$")
+    public void i_enter_as_number_of_children_staying_in_the_room(String arg1) throws Throwable {
+        searchPage.enterChildrenStaying(arg1);
+
+    }
+
+
+    @Then("^I enter \"(.*?)\" as number of Infants staying in the room$")
+    public void i_enter_as_number_of_Infants_staying_in_the_room(String arg1) throws Throwable {
+        searchPage.enterInfantsStayingInThisRoom(arg1);
+
+    }
+
+    @Then("^I select \"(.*?)\" as age of child staying from dropdown$")
+    public void i_select_as_age_of_child_staying_from_dropdown(String arg1) throws Throwable {
+        searchPage.selectingAgeOFChildStaying(arg1);
+
+    }
+
+    @Then("^I select \"(.*?)\" as the age of Infant from dropdown$")
+    public void i_select_as_the_age_of_Infant_from_dropdown(String arg1) throws Throwable {
+        searchPage.selectingAgeInfantStaying(arg1);
+
+    }
+
+    @Then("^I click on confirm button$")
+    public void i_click_on_confirm_button() throws Throwable {
+        searchPage.clickingToConfirmPeopleStaying();
+
+    }
+    @Then("^I click on continue as new customer$")
+    public void i_click_on_continue_as_new_customer() throws Throwable {
+
+    }
+
+
+    @Then("^I should click on next  button for a room with extas$")
+    public void i_should_click_on_next_button_for_a_room_with_extras() throws Throwable {
+        searchPage.clickingOnNextButtonForARoomWithExtras();
+
+    }
+    @Then("^I should see signin as  returning or continue as new customer Popup$")
+    public void i_should_see_signin_as_returning_or_continue_as_new_customer_Popup() throws Throwable {
+        searchPage.getParentWindowHandle();
+        searchPage.switchToLoginIframe();
+        searchPage.validateNewReturningCustomerPopUp();
+
+    }
+
+    @Then("^I sign in a returning customer$")
+    public void i_sign_in_a_returning_customer() throws Throwable {
+
+         searchPage.iframeLogin();
+        searchPage.getParentWindowHandle();
+
+    }
+
+    @Then("^I should be on smithcollections booking step two$")
+    public void i_should_be_on_smithcollections_booking_step_two()     {
+     searchPage.validateSmithCollectionsBookingSummaryBookingStep2();
+    }
+
 }

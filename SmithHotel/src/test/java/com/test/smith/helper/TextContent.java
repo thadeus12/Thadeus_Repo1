@@ -35,16 +35,7 @@ public class TextContent {
 
     }
 
-    public static String getmageUploadPageUrl() throws IOException {
-        String baseUrl= "ImageUploadPageUrl";
-        String url = null;
-        initializeConfig();
 
-        if (CONFIG.getProperty(baseUrl) != null)
-
-            url= CONFIG.getProperty(baseUrl);
-        return url;
-    }
 
     public static String getHomePageUrl() throws IOException {
         String baseUrl= "HomePageUrl";

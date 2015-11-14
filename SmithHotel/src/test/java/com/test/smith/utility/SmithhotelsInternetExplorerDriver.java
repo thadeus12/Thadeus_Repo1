@@ -20,7 +20,7 @@ public class SmithhotelsInternetExplorerDriver extends InternetExplorerDriver {
     /**
      * Driver constructor
      *
-     * @param desiredCapabilities to be passed into the standard FirefoxDriver
+     * @param desiredCapabilities to be passed into the standard InternetExplorerDriver
      */
     public SmithhotelsInternetExplorerDriver(Capabilities desiredCapabilities) {
         super(desiredCapabilities);

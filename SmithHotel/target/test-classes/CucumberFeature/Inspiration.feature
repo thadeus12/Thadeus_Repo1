@@ -17,5 +17,5 @@ Feature: search by Smith inspired hotels feature
 
   Examples:
   |Links| CheckIn Date | CheckOut Date | Country | Destination |
-  |Child-friendly| 20-08-2015   | 23-08-2015    | France  | Paris       |
-  |Go swimming| 20-08-2015   | 23-08-2015    | United Kingdom | London      |
+  |Child-friendly | 20-11-2015   | 23-11-2015    | France         | Paris       |
+  |Go swimming    | 20-11-2015   | 23-11-2015    | United Kingdom | London      |

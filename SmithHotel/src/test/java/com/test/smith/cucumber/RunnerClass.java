@@ -12,7 +12,7 @@ import java.io.IOException;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(tags="@smoke-test12", strict=true,
+@CucumberOptions(tags="@complete", strict=true,
         plugin= {"pretty","html:target/cucumber"},
         monochrome = true,
         glue = { "com.test.smith.page_sd",

@@ -33,13 +33,13 @@ Scenario:
     Then I should see hotel booking terms and conditions
 
   Scenario:
-    Given I click on "Bookit"button
-    And I enter number of "adults staying in the room" as "2"
-    And I enter number of "children staying in the room" as "1"
-    And I enter number of "Infants staying in the room" as "1"
-    And I select "child age" from dropdown as "8"
-    And I select "Infant age" from dropdown as "1"
-    And I click on "confirm"button
+    Given I click on Bookit button
+    And I enter "2" as number of "adults staying in the room" as "2"
+    And I enter "2" as number of children staying in the room
+    And I enter "1" as number of Infants staying in the room
+    And I select "8" AS child age from dropdown
+    And I select "2" the age of Infant from dropdown
+    And I click on confirm button
     Scenario:
     Given I am logged in to smith hotels
     Then I should "continue booking" as existing customer
