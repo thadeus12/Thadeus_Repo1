@@ -49,28 +49,28 @@ formatter.match({
   "location": "TashhLogin_sd.i_am_on(String)"
 });
 formatter.result({
-  "duration": 1138082939,
+  "duration": 1348710735,
   "status": "passed"
 });
 formatter.match({
   "location": "TashhLogin_sd.i_enter_my_username_and_password()"
 });
 formatter.result({
-  "duration": 5266837721,
+  "duration": 3813725854,
   "status": "passed"
 });
 formatter.match({
   "location": "TashhLogin_sd.i_click_on_the_login_button()"
 });
 formatter.result({
-  "duration": 2799892236,
+  "duration": 2710377694,
   "status": "passed"
 });
 formatter.match({
   "location": "TashhUserProfilePage_sd.i_should_be_logged_in()"
 });
 formatter.result({
-  "duration": 1282964711,
+  "duration": 1373523873,
   "status": "passed"
 });
 formatter.scenario({
@@ -111,7 +111,7 @@ formatter.match({
   "location": "TashhUserProfilePage_sd.i_select_as_Agent(String)"
 });
 formatter.result({
-  "duration": 4160249283,
+  "duration": 4449767908,
   "status": "passed"
 });
 formatter.match({
@@ -124,7 +124,7 @@ formatter.match({
   "location": "TashhUserProfilePage_sd.i_click_on_the_search_drop_down(String)"
 });
 formatter.result({
-  "duration": 2358135053,
+  "duration": 2478883061,
   "status": "passed"
 });
 formatter.match({
@@ -137,14 +137,14 @@ formatter.match({
   "location": "TashhUserProfilePage_sd.i_enter_the_Member_name_as(String)"
 });
 formatter.result({
-  "duration": 1155756259,
+  "duration": 1166613164,
   "status": "passed"
 });
 formatter.match({
   "location": "TashhUserProfilePage_sd.i_click_on_the_search_button()"
 });
 formatter.result({
-  "duration": 722900167,
+  "duration": 719682478,
   "status": "passed"
 });
 });

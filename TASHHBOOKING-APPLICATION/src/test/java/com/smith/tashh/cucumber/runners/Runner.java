@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(tags="@smoke-test",
         monochrome = true, strict= true,
-                 format={"html:target/cucumber"},
+                 format={"json:target/cucumber.json","html:target/cucumber"},
                   features = "src/test/resources/com/smith/tashh",
                  glue={"com.smith.tashh.cucumber.pages",
                          "com.smith.tashh.cucumber.step_def",
