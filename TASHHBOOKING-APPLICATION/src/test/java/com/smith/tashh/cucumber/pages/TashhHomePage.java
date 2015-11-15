@@ -14,7 +14,7 @@ public class TashhHomePage extends Driver {
         driver.get(url);
     }
     public void tashhLogin(){
-        waitForElementDisplay(username);
+        //waitForElementDisplay(username);
         username.sendKeys("Thadeus01");
         password.sendKeys("Thad3us");
     }

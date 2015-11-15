@@ -43,7 +43,7 @@ public class TashhUserProfilePage extends Driver{
     }
 
     public void enterMemberName(String memberName){
-        waitForElementDisplay(searchMemberPopUp);
+      waitForElementDisplay(searchMemberPopUp);
         searchMemberField.sendKeys(memberName);
 
     }

@@ -1,6 +1,6 @@
 package com.smith.tashh.cucumber.utility;
 
-import com.sun.istack.internal.Nullable;
+
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
  */
 public abstract class Driver {
 
-    public static WebDriver driver;
+    public static WebDriver driver=null;
 
     protected static WebDriver browserType(String browser){
 
@@ -43,14 +43,13 @@ public abstract class Driver {
         return driver;
     }
 
-    public void waitForElementDisplay(final WebElement element){
+ public void waitForElementDisplay(final WebElement element){
 
         Wait<WebDriver> wait = new FluentWait<WebDriver>(Driver.driver)
                 .withTimeout(60, TimeUnit.SECONDS)
                 .pollingEvery(3, TimeUnit.SECONDS)
                 .ignoring(NoSuchElementException.class);
         wait.until(new ExpectedCondition<Boolean>() {
-                       @Nullable
                        @Override
                        public Boolean apply(WebDriver input) {
                            return element.isDisplayed();

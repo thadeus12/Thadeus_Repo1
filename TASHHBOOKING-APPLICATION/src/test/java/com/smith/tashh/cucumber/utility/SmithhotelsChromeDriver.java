@@ -1,7 +1,6 @@
 package com.smith.tashh.cucumber.utility;
 
 
-
 import com.smith.tashh.cucumber.helper.SizzleSelector;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebElement;

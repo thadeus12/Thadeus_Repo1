@@ -1,4 +1,4 @@
-@smoke-test
+@smoke-test12
 Feature: Belly
 
   Background: login to Tashh
