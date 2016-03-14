@@ -1,0 +1,40 @@
+{
+  "customerRef":"1601281442072533",
+  "status":"SUCCESS",
+  "marketId":"1.122694969",
+  "instructionReports":[
+    {
+      "status":"SUCCESS",
+      "instruction":{
+        "selectionId":1097,
+        "limitOrder":{
+          "size":2.25,
+          "price":1.81,
+          "persistenceType":"PERSIST"
+        },
+        "orderType":"LIMIT",
+        "side":"BACK"
+      },
+      "betId":"61205608528",
+      "placedDate":"2016-01-28T14:42:10.000Z",
+      "averagePriceMatched":1.8099999999999998,
+      "sizeMatched":2.25
+    }, {
+      "status":"SUCCESS",
+      "instruction":{
+        "selectionId":1096,
+        "limitOrder":{
+          "size":2.25,
+          "price":1.81,
+          "persistenceType":"PERSIST"
+        },
+        "orderType":"LIMIT",
+        "side":"BACK"
+      },
+      "betId":"61205608529",
+      "placedDate":"2016-01-28T14:42:10.000Z",
+      "averagePriceMatched":1.8099999999999998,
+      "sizeMatched":2.25
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+[
+  {
+    "marketId": "1.122694969",
+    "isMarketDataDelayed": false,
+    "status": "OPEN",
+    "betDelay": 0,
+    "bspReconciled": false,
+    "complete": false,
+    "inplay": false,
+    "numberOfWinners": 1,
+    "numberOfRunners": 3,
+    "numberOfActiveRunners": 3,
+    "lastMatchTime": "2016-02-04T18:01:38.340Z",
+    "totalMatched": 0.0,
+    "totalAvailable": 40946.27,
+    "crossMatching": false,
+    "runnersVoidable": false,
+    "version": 1128165854,
+    "runners": [
+      {
+        "selectionId": "1096",
+        "handicap": 0.0,
+        "status": "ACTIVE",
+        "lastPriceTraded": 5.5,
+        "totalMatched": 2340.05
+      },
+      {
+        "selectionId": "1097",
+        "handicap": 0.0,
+        "status": "ACTIVE",
+        "lastPriceTraded": 2.12,
+        "totalMatched": 25.86
+      },
+      {
+        "selectionId": "1098",
+        "handicap": 0.0,
+        "status": "ACTIVE",
+        "lastPriceTraded": 2.12,
+        "totalMatched": 25.86
+      }
+    ]
+  },
+  {
+    "marketId": "1.122694970",
+    "isMarketDataDelayed": false,
+    "status": "OPEN",
+    "betDelay": 0,
+    "bspReconciled": false,
+    "complete": false,
+    "inplay": false,
+    "numberOfWinners": 1,
+    "numberOfRunners": 3,
+    "numberOfActiveRunners": 3,
+    "lastMatchTime": "2016-02-04T18:01:38.340Z",
+    "totalMatched": 0.0,
+    "totalAvailable": 40946.27,
+    "crossMatching": false,
+    "runnersVoidable": false,
+    "version": 1128165854,
+    "runners": [
+      {
+        "selectionId": "1090",
+        "handicap": 0.0,
+        "status": "ACTIVE",
+        "lastPriceTraded": 5.5,
+        "totalMatched": 2340.05
+      },
+      {
+        "selectionId": "1091",
+        "handicap": 0.0,
+        "status": "ACTIVE",
+        "lastPriceTraded": 2.12,
+        "totalMatched": 25.86
+      },
+      {
+        "selectionId": "1092",
+        "handicap": 0.0,
+        "status": "ACTIVE",
+        "lastPriceTraded": 2.12,
+        "totalMatched": 25.86
+      }
+    ]
+  }
+]

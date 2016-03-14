@@ -1,0 +1,22 @@
+{
+  "customerRef":"1601281442072533",
+  "status":"FAILURE",
+  "errorCode":"SOMETHING",
+  "marketId":"1.122694969",
+  "instructionReports":[
+    {
+      "status":"FAILURE",
+      "errorCode":"ERROR_IN_ORDER",
+      "instruction":{
+        "selectionId":1096,
+        "limitOrder":{
+          "size":2.0,
+          "price":1.77,
+          "persistenceType":"PERSIST"
+        },
+        "orderType":"LIMIT",
+        "side":"BACK"
+      }
+    }
+  ]
+}
