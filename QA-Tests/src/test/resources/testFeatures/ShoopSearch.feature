@@ -1,4 +1,4 @@
-@smoke-test
+@ignore
 Feature: As shoop customer I should be able to Login
 
  Scenario: : login to Tashh
