@@ -1,4 +1,3 @@
-@feature @QP-153
 Feature: Micro service
   As a  signed quidco member
   I should be able to find merchants using search terms

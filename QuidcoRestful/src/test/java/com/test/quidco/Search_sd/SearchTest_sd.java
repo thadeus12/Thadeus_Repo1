@@ -1,6 +1,8 @@
 package com.test.quidco.Search_sd;
 
-import cucumber.api.DataTable;
+
+import com.jayway.restassured.response.Response;
+import com.test.quidco.utility.SearchTest;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
@@ -9,16 +11,29 @@ import cucumber.api.java.en.Then;
  */
 public class SearchTest_sd {
 
-    @Given("^I enter a search term on the rest url$")
-    public void i_enter_a_search_term_on_the_rest_url(DataTable arg1) throws Throwable {
+    SearchTest searchTest;
+    Response response;
 
-
+    public SearchTest_sd() {
+        searchTest = new SearchTest();
     }
 
-    @Then("^I should get back these events in search results response$")
-    public void i_should_get_back_these_events_in_search_results_response(DataTable arg1) throws Throwable {
+    @Given("^I enter a \"(.*)\" on the rest url$")
+    public void i_enter_a_on_the_rest_url(String searchTerm) throws Throwable {
 
-
+        response = searchTest.sendSearchRequest(searchTerm);
     }
+
+    @Then("^I should get back these events merchantId \"(.*)\" in search results response$")
+    public void i_should_get_back_these_events_merchantId_in_search_results_response(String merchantId) throws Throwable {
+         searchTest.validateMerchantID(response,merchantId);
+    }
+
+    @Then("^I should get back these events exactMatch \"(.*)\" in search results response$")
+    public void i_should_get_back_these_events_exactMatch_in_search_results_response(String exactMatch) throws Throwable {
+          searchTest.validateExactMatch(response,exactMatch);
+    }
+
+
 
 }

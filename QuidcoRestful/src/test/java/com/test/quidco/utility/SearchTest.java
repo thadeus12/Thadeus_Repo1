@@ -2,52 +2,35 @@ package com.test.quidco.utility;
 
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.response.Response;
-import org.junit.Test;
-
 
 import static com.jayway.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.hasItem;
 
 
-/**
- * Created by sewadeus on 16/04/2016.
- */
 public class SearchTest {
 
     public SearchTest() {
+
         RestAssured.baseURI = "http://www.quidco.com";
     }
 
 
-
-
     public Response sendSearchRequest(String searchTerm) {
-        String url = "/search-typeahead-direct.php?search=%s&fn=logout";
-        return given().expect().statusCode(200).when().get(String.format(url, searchTerm)).then().extract().response();
+
+        String searchPath = "/search-typeahead-direct.php?search=%s&fn=logout";
+        return given().expect().statusCode(200).when().get(String.format(searchPath, searchTerm)).then().log().ifError().extract().response();
     }
 
-    public void validateMerchantID(Response response, String merchantId){
-        assertThat(response.path("results.merchant_id") ,hasItem(merchantId));
+    public void validateMerchantID(Response response, String merchantId) {
+
+        assertThat(response.path("results.merchant_id"), hasItem(merchantId));
     }
 
-    public  void validateMostRelavant(){
+    public void validateExactMatch(Response response, String exactMatchTerm) {
 
-    }
-    public void validateMerchantName(){
-
-    }
-
-    public void validateMerchantResultPosition(){
-
+        assertThat(response.path("results.name"), hasItem(exactMatchTerm));
     }
 
 
- public void validateExactMatch(){
-
- }
-    public void validateBestNatch(){
-
-
-    }
 }
