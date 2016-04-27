@@ -1,7 +1,7 @@
-C:\Users\sewadeus\Documents\GitHub\Thadeus_Repo1\Sewadeus-SeleniumFramWork\src\test\java\com\sewadeus\test\beanconfig\browserdriver\BrowserDriverExtended.java
-C:\Users\sewadeus\Documents\GitHub\Thadeus_Repo1\Sewadeus-SeleniumFramWork\src\test\java\Listeners\ScreenshotTestRule.java
-C:\Users\sewadeus\Documents\GitHub\Thadeus_Repo1\Sewadeus-SeleniumFramWork\src\test\java\com\sewadeus\test\beanconfig\browserdriver\SizzleSelector.java
-C:\Users\sewadeus\Documents\GitHub\Thadeus_Repo1\Sewadeus-SeleniumFramWork\src\test\java\tests\TestGoogle.java
-C:\Users\sewadeus\Documents\GitHub\Thadeus_Repo1\Sewadeus-SeleniumFramWork\src\test\java\config\BrowserService.java
-C:\Users\sewadeus\Documents\GitHub\Thadeus_Repo1\Sewadeus-SeleniumFramWork\src\test\java\com\sewadeus\test\beanconfig\BeanConfig.java
-C:\Users\sewadeus\Documents\GitHub\Thadeus_Repo1\Sewadeus-SeleniumFramWork\src\test\java\config\BrowserCapabilities.java
+/home/thadeus/BitBucket/Thadeus_Repo1/Sewadeus-SeleniumFramWork/src/test/java/com/sewadeus/test/beanconfig/BeanConfig.java
+/home/thadeus/BitBucket/Thadeus_Repo1/Sewadeus-SeleniumFramWork/src/test/java/config/BrowserCapabilities.java
+/home/thadeus/BitBucket/Thadeus_Repo1/Sewadeus-SeleniumFramWork/src/test/java/com/sewadeus/test/beanconfig/browserdriver/BrowserDriverExtended.java
+/home/thadeus/BitBucket/Thadeus_Repo1/Sewadeus-SeleniumFramWork/src/test/java/com/sewadeus/test/beanconfig/browserdriver/SizzleSelector.java
+/home/thadeus/BitBucket/Thadeus_Repo1/Sewadeus-SeleniumFramWork/src/test/java/tests/TestGoogle.java
+/home/thadeus/BitBucket/Thadeus_Repo1/Sewadeus-SeleniumFramWork/src/test/java/Listeners/ScreenshotTestRule.java
+/home/thadeus/BitBucket/Thadeus_Repo1/Sewadeus-SeleniumFramWork/src/test/java/config/BrowserService.java
