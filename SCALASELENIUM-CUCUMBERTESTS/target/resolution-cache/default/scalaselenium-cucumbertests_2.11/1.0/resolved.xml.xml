@@ -4,7 +4,7 @@
 		module="scalaselenium-cucumbertests_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160822162002"
+		publication="20160823105327"
 	>
 		<description>
 		SCALASELENIUM-CUCUMBERTESTS
@@ -35,14 +35,14 @@
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.8" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.8" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="com.codeborne" name="phantomjsdriver" rev="1.2.1" conf="compile->default(compile)"/>
-		<dependency org="org.seleniumhq.selenium" name="selenium-java" rev="2.53.0" conf="compile->default(compile)"/>
-		<dependency org="org.seleniumhq.selenium" name="selenium-firefox-driver" rev="2.53.0" conf="compile->default(compile)"/>
+		<dependency org="org.seleniumhq.selenium" name="selenium-java" rev="2.53.1" conf="compile->default(compile)"/>
+		<dependency org="org.seleniumhq.selenium" name="selenium-firefox-driver" rev="2.53.1" conf="compile->default(compile)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="compile->default(compile)"/>
 		<dependency org="info.cukes" name="cucumber-scala_2.11" rev="1.2.4" conf="compile->default(compile)"/>
 		<dependency org="info.cukes" name="cucumber-junit" rev="1.2.4" conf="compile->default(compile)"/>
 		<dependency org="info.cukes" name="cucumber-picocontainer" rev="1.2.4" conf="compile->default(compile)"/>
 		<dependency org="junit" name="junit" rev="4.12" conf="test->default(compile)"/>
 		<dependency org="com.novocode" name="junit-interface" rev="0.11" conf="test->default(compile)"/>
-		<dependency org="org.scalatest" name="scalatest_2.11" rev="2.2.5" conf="compile->default(compile)"/>
+		<dependency org="org.scalatest" name="scalatest_2.11" rev="2.2.6" conf="test->default(compile)"/>
 	</dependencies>
 </ivy-module>

@@ -4,7 +4,7 @@ import cucumber.api.CucumberOptions
 import cucumber.api.junit.Cucumber
 import org.junit.{After, Before}
 import org.junit.runner.RunWith
-import utilty.AbstractDriver
+import utility.AbstractDriver
 
 /**
   * Created by thadeus on 19/08/16.
@@ -13,9 +13,9 @@ import utilty.AbstractDriver
 @RunWith(classOf[Cucumber])
 @CucumberOptions(
 
-  features= Array ("src/test/resources/featureCase"),
+  features= Array ("src/test/resources/feature"),
   tags=Array("@Login"),
-  glue = Array("stepDef","pages","helper","utility"),
+  glue = Array("pageStepDef","pages","helper","utility"),
 
    plugin = Array("pretty","html:target/cucumber","json:target/cucumber.json")
 )

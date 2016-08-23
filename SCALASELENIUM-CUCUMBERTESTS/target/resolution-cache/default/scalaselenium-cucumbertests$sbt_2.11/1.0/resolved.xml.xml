@@ -4,7 +4,7 @@
 		module="scalaselenium-cucumbertests$sbt_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160822163053"
+		publication="20160823105241"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>

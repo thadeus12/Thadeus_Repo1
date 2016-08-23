@@ -1,35 +1,33 @@
 package pageStepDef
-import pages.{HomePage, LoginPage}
 import cucumber.api.scala.{EN, ScalaDsl}
+import pages.LoginPage1
 
 
-
-
-class LoginStepDef {
-  lazy val homePage = new HomePage()
-  lazy val loginPage = new LoginPage()
+class LoginStepDef extends ScalaDsl with EN with LoginPage1 {
+ /* lazy val homePage = new HomePage()
+  lazy val loginPage = new LoginPage()*/
 
 
   Given("""^I go to "([^"]*)"$"""){ (arg0:String) =>
-    homePage.goToHomePage(arg0)
+
+    goToHomePage(arg0)
   }
 
   When("""^I click on the myaccount button$""") { () =>
-
-  loginPage.clickOnMyAccountLink()
+    clickOnMyAccountLink()
   }
 
   When("""^I enter my email as "([^"]*)" and password "([^"]*)"$"""){ (arg0:String, arg1:String) =>
-   loginPage.entermMyEmailAndPassword(arg0,arg1)
+   entermMyEmailAndPassword(arg0,arg1)
   }
 
 
   When("""^I click on the submit button$"""){ () =>
-    loginPage.clickOnTheSubmitButton()
+    clickOnTheSubmitButton()
   }
 
   Then("""^I should see a message"([^"]*)" displayed$"""){ (arg0:String) =>
-    loginPage.validateIamLoggedIn(arg0)
+    validateIamLoggedIn(arg0)
   }
 
 
