@@ -1,8 +1,6 @@
 package com.test.quidco.system.groovy.com.leo.apollo.qa.system.agency.agent
 
-/**
- * Created by Charles.Moga on 13/02/2016.
- */
+
 import com.leo.apollo.qa.system.helpers.BaseTest
 import org.openqa.selenium.Alert
 import org.openqa.selenium.By
